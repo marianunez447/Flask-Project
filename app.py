@@ -18,7 +18,15 @@ def hello():
 
 @app.route("/1006")
 def test():
-    return "idk man"
+    return "1006 homepage"
+
+@app.route("/friends")
+def friends():
+    return render_template("friends.html")
+
+@app.route("/classes")
+def classes():
+    return render_template("classes.html")
 
 #start the server
 if __name__ == "__main__":
