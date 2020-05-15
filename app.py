@@ -20,9 +20,9 @@ def hello():
 def test():
     return "1006 homepage"
 
-@app.route("/friends")
-def friends():
-    return render_template("friends.html")
+@app.route("/assignments")
+def assignments():
+    return render_template("assignments.html")
 
 @app.route("/classes")
 def classes():
